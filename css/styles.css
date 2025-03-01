@@ -286,6 +286,11 @@ button:hover {
   }
 }
 
+@media (max-width: 768px) {
+  ::after, ::before {
+    display: none;
+  }
+}
 .header {
   display: flex;
   flex-direction: column;
@@ -798,6 +803,11 @@ button:hover {
   }
 }
 
+@media (max-width: 768px) {
+  ::after, ::before {
+    display: none;
+  }
+}
 .video {
   margin-bottom: 180px;
 }
@@ -1026,6 +1036,11 @@ button:hover {
   }
 }
 
+@media (max-width: 768px) {
+  ::after, ::before {
+    display: none;
+  }
+}
 .title__map {
   padding-bottom: 88px;
 }
@@ -1241,6 +1256,11 @@ button:hover {
   }
 }
 
+@media (max-width: 768px) {
+  ::after, ::before {
+    display: none;
+  }
+}
 .form__feedback {
   margin-bottom: 180px;
 }
