@@ -19,6 +19,12 @@
         font-weight: bold;
     }
 
+    @include mediaTablet {
+        &::before {
+            display: none;
+        }
+    }
+
     .map__wrapper {
         display: flex;
         justify-content: center;

@@ -46,6 +46,12 @@
         @include decorNumber;
         font-weight: bold;
     }
+
+    @include mediaTablet {
+        &::after {
+            display: none;
+        }
+    }
 }
 
 @include mediaTablet {

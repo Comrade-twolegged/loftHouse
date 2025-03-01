@@ -286,11 +286,6 @@ button:hover {
   }
 }
 
-@media (max-width: 768px) {
-  ::after, ::before {
-    display: none;
-  }
-}
 .header {
   display: flex;
   flex-direction: column;
@@ -420,6 +415,11 @@ button:hover {
   font-family: "Playfair Display";
   font-weight: bold;
 }
+@media screen and (max-width: 959px) {
+  .benefits .grid__benefits::after {
+    display: none;
+  }
+}
 .benefits .block__benefits {
   text-align: center;
 }
@@ -465,6 +465,11 @@ button:hover {
   font-size: 400px;
   font-family: "Playfair Display";
   font-weight: bold;
+}
+@media screen and (max-width: 959px) {
+  .apartments::before {
+    display: none;
+  }
 }
 
 .title__apartments {
@@ -803,11 +808,6 @@ button:hover {
   }
 }
 
-@media (max-width: 768px) {
-  ::after, ::before {
-    display: none;
-  }
-}
 .video {
   margin-bottom: 180px;
 }
@@ -857,6 +857,11 @@ button:hover {
   font-size: 400px;
   font-family: "Playfair Display";
   font-weight: bold;
+}
+@media screen and (max-width: 959px) {
+  .videos::after {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 959px) {
@@ -1036,11 +1041,6 @@ button:hover {
   }
 }
 
-@media (max-width: 768px) {
-  ::after, ::before {
-    display: none;
-  }
-}
 .title__map {
   padding-bottom: 88px;
 }
@@ -1062,6 +1062,11 @@ button:hover {
   font-size: 400px;
   font-family: "Playfair Display";
   font-weight: bold;
+}
+@media screen and (max-width: 959px) {
+  .map::before {
+    display: none;
+  }
 }
 .map .map__wrapper {
   display: flex;
@@ -1256,11 +1261,6 @@ button:hover {
   }
 }
 
-@media (max-width: 768px) {
-  ::after, ::before {
-    display: none;
-  }
-}
 .form__feedback {
   margin-bottom: 180px;
 }

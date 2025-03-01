@@ -12,6 +12,12 @@
         @include decorNumber;
         font-weight: bold;
     }
+
+    @include mediaTablet {
+        &::before {
+            display: none;
+        }
+    }
 }
 
 .title__apartments {
