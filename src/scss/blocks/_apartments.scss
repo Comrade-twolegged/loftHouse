@@ -1,0 +1,43 @@
+@import '../base/vars';
+@import '../base/mixins';
+
+.apartments {
+    margin-top: 120px;
+
+    &::before {
+        content: 'III';
+        position: absolute;
+        right: calc(50% + 555px); 
+        transform: translate(50%, 0%);
+        @include decorNumber;
+        font-weight: bold;
+    }
+}
+
+.title__apartments {
+    margin-bottom: 88px;
+}
+
+.apartments__photo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-content: center;
+
+    
+}
+
+@include mediaTablet {
+    .apartments {
+        margin-top: 50px;
+    }
+
+    .title__apartments {
+        margin-bottom: 44px;
+    }
+
+    .apartments__photo {
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        justify-items: center;
+    }
+}

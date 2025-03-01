@@ -1,0 +1,34 @@
+@import '../base/vars';
+@import '../base/mixins';
+
+.info {
+    font-size: 18px;
+    position: relative;
+
+    &--map,
+    &--tel {
+        padding-left: 30px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 21px;
+            height: 21px;
+        }
+    }
+
+    &--map::before {
+        background-image: url('../src/images/header/map.svg');
+    }
+
+    &--tel::before {
+        background-image: url('../src/images/header/phone.svg');
+    }
+
+    @include mediaTablet {
+        font-size: 13px;
+    }
+}
+

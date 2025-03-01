@@ -1,0 +1,17 @@
+@use './base/vars';
+@use './base/mixins';
+@use './base/reset';
+@use './base/base';
+
+@use "./blocks/header";
+@use "./blocks/info";
+@use "./blocks/benefits";
+@use "./blocks/apartments";
+@use "./blocks/card";
+@use "./blocks/cta";
+@use "./blocks/video";
+@use "./blocks/map";
+@use "./blocks/feedback";
+@use "./blocks/footer";
+@use "./blocks/nav-icon";
+

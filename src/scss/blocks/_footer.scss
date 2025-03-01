@@ -1,0 +1,44 @@
+@import "../base/vars";
+@import "../base/mixins";
+
+.info__footer {
+    display: flex;
+    column-gap: 129px;
+    margin-bottom: 51px;
+}
+
+.info__footer {
+    div {
+        li {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.social{
+    display: flex;
+    column-gap: 21px;
+}
+
+.ul__email{
+    color: $accent;
+}
+
+@include mediaTablet {
+    .info__footer {
+        font-size: 11px;
+        column-gap: 20px;
+        margin-bottom: 20px;
+        justify-content: center;
+        justify-items: center;
+
+        .logo{
+            display: none;
+        }
+    }
+
+    .social{
+        column-gap: 15px;
+    }
+    
+}

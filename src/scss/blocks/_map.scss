@@ -1,0 +1,45 @@
+@import "../base/base";
+@import "../base/vars";
+
+.title__map{
+    padding-bottom: 88px;
+}
+
+.map {
+    padding-bottom: 180px;
+    display: flex; 
+    justify-content: center;
+
+    &::before {
+        content: 'V';
+        position: absolute;
+        right: calc(50% + 555px); 
+        transform: translate(50%, -35%);
+        @include decorNumber;
+        font-weight: bold;
+    }
+
+    .map__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%; 
+        max-width: 1110px;
+        height: 494px; 
+        border: none;
+    }
+}
+
+@include mediaTablet {
+    .title__map{
+        padding-bottom: 43px;
+    }
+   
+    .map{ 
+        padding-bottom: 60px;
+    }
+}

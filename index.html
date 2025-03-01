@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>loftHouse</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top-row">
+                <div class="logo">
+                    <img src="./src/images/first-screen__logo.svg" alt="logo">
+                </div>
+
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="#benefits">Про комплекс</a></li>
+                        <li><a href="#map">Район</a></li>
+                        <li><a href="#apartments">Каталог квартир</a></li>
+                        <li><a href="#cta">Іпотека</a></li>
+                        <li><a href="#footer">Контакти</a></li>
+                    </ul>
+
+                    <div class="overlay">
+                        <ul class="overlay__nav__list">
+
+                            <div class="overlay__logo">
+                                <img src="./src/images/first-screen__logo.svg" alt="logo">
+                            </div>
+
+                            <li><a href="#benefits">Про комплекс</a></li>
+                            <li><a href="#map">Район</a></li>
+                            <li><a href="#apartments">Каталог квартир</a></li>
+                            <li><a href="#footer">Іпотека</a></li>
+                            <li><a href="#footer">Контакти</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="header__nav-btn">
+                        <button class="nav-icon-btn">
+                            <div class="nav-icon"></div>
+                        </button>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1 class="header__title">
+                Жилий комплекс <br> в історичному центрі
+                <a href="#">
+                    <img class="header__title-icon" src="./src/images/header/mouse.svg" alt="mouse">
+                </a>
+            </h1>
+        </div>
+
+        <div class="header__footer">
+            <div class="text-right">
+                <a href="#map" class="info info--map">вулиця Межигірська, 78</a>
+            </div>
+            <a href="#cta" class="info info--tel">+38 (063) 652-26-18</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="benefits" class="benefits">
+            <div class="container grid__benefits">
+                <div class="block__benefits">
+                    <img src="./src/images/benefits/bench.svg" alt="" class="img__benefits">
+                    <p class="text__benefits">
+                        Поряд істоичні <br>
+                        парки та сквери
+                    </p>
+                </div>
+
+                <div class="block__benefits">
+                    <img src="./src/images/benefits/building.svg" alt="" class="img__benefits">
+                    <p class="text__benefits">
+                        Повністю <br>
+                        облаштований
+                    </p>
+                </div>
+
+                <div class="block__benefits">
+                    <img src="./src/images/benefits/fountain.svg" alt="" class="img__benefits">
+                    <p class="text__benefits">
+                        10 фонтанів <br>
+                        на території
+                    </p>
+                </div>
+
+                <div class="block__benefits">
+                    <img src="./src/images/benefits/bicycle.svg" alt="" class="img__benefits">
+                    <p class="text__benefits">
+                        6 км <br>
+                        велодоріжок
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="apartments" class="apartments">
+            <div class="container">
+                <h2 class="title__apartments title-2">Наші квартири</h2>
+
+                <div class="apartments__photo">
+                    <div class="card">
+                        <img src="./src/images/apartments/01.jpg" alt="" class="card__img">
+                        <p class="card__title">Пентхаус “Loft Олімп”</p>
+                    </div>
+                    <div class="card">
+                        <img src="./src/images/apartments/02.jpg" alt="" class="card__img">
+                        <p class="card__title">Апартаменти “Nice Loft”</p>
+                    </div>
+                    <div class="card">
+                        <img src="./src/images/apartments/03.jpg" alt="" class="card__img">
+                        <p class="card__title">Апартаменти “Loft Studio”</p>
+                    </div>
+                    <div class="card">
+                        <img src="./src/images/apartments/04.jpg" alt="" class="card__img">
+                        <p class="card__title">Loft квартира “Престиж”</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta" class="cta">
+            <div class="container">
+                <h2 class="title-2 title__cta">Бажаєте подивитись?</h2>
+                <div class="cta__box">
+                    <div class="info_cta">
+                        <p class="texst__cta">
+                            ЖК LoftHouse - це проект бізнес-класу, розташований в центрі міста,
+                            на вулиці Межигірська, 78. Комплекс пропонує своїм мешканцям
+                            квартири площею від 40 до 170 кв. м. У будівлі буде три секції, в яких
+                            розміститься лише 56 квартир.
+                        </p>
+                    </div>
+
+
+                    <form class="info_form">
+                        <input class="name" type="text" name="name" placeholder="Ваше ім'я">
+                        <input class="phone" type="text" name="phone" placeholder="Телефон">
+                        <p class="texst__form">
+                            *Ми нікому не передаємо ваші дані. <br>
+                            І не зберігаємо ваш номер у базу.
+                        </p>
+
+                        <button class="btn">Подивитись район</button>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="video" class="video">
+            <div class="container">
+                <div class="videos">
+                    <div class="video-container">
+                        <video id="myVideo" class="video" src="./src/images/video/video.jpg"></video>
+                        <button id="playPauseBtn" class="play-pause-btn"><img src="./src/images/video/play-button.svg"
+                                alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="map">
+            <div class="container">
+                <p class="title-2 title__map">Район на карті</p>
+                <div class="map">
+                    <div class="map__wrapper">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d635.586039368285!2d30.599536509753065!3d50.41605915537079!2m3!1f0!2f0!3f0!3m2!
+                    1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c59ced116dc7%3A0x27032a12967d1dfa!2z0YPQuy4g0JPQu9C10LHQsCDQkdCw0LHQuNGH0LAsIDEsINCa0LjQtdCyLCDQo9C60YDQsNC40
+                    L3QsCwgMDIwMDA!5e0!3m2!1sru!2spl!4v1740676409782!5m2!1sru!2spl" style="border:0;"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="feedback" class="feedback">
+            <div class="container">
+                <p class="title_feedback title-2">Є питання?</p>
+                <form class="form__feedback" action="">
+                    <p class="texst__feedback">
+                        *Ми нікому не передаємо ваші дані. <br>
+                        І не зберігаємо ваш номер у базу.
+                    </p>
+                    <input class="name__feedback" type="text" name="name" placeholder="Ваше ім'я">
+                    <input class="phone__feedback" type="text" name="phone" placeholder="Телефон">
+                    <button class="btn__feedback btn">Подивитись район</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="info__footer">
+                <div>
+                    <div class="logo">
+                        <img src="./src/images/first-screen__logo.svg" alt="logo">
+                    </div>
+                </div>
+
+                <div>
+                    <ul>
+                        <li><a href="#benefits">Про комплекс</a></li>
+                        <li><a href="#map">Район</a></li>
+                        <li><a href="#apartments">Каталог квартир</a></li>
+                        <li><a href="#cta">Іпотека</a></li>
+                        <li><a href="#">Контакти</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li><a href="#">Поселення та переїзд</a></li>
+                        <li><a href="#">Сервісні послуги</a></li>
+                        <li><a href="#">Екологічна стійкість</a></li>
+                        <li><a href="#">Інвестиційні можливості</a></li>
+                        <li><a href="#">Програма лояльності </a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li><a href="#map">Адреса: вулиця Межигірська, 78</a></li>
+                        <li><a href="#cta">Телефон: +38 063 652-26-18</a></li>
+                        <li><a href="#">Відділ продажів: 10:00 - 20:00</a></li>
+                        <li><a href="#">E-mail: <strong class="ul__email">vip@lofthouse.ua</strong></a></li>
+
+                        <div class="social">
+                            <a href="#"><img src="./src/images/socials/youtube.svg" alt="youtube"></a>
+                            <a href="#"><img src="./src/images/socials/vk.svg" alt="vk"></a>
+                            <a href="#"><img src="./src/images/socials/facebook.svg" alt="facebook"></a>
+                            <a href="#"><img src="./src/images/socials/instagram.svg" alt="instagram"></a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./src/index.js"></script>
+
+</html>
