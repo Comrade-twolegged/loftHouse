@@ -107,11 +107,10 @@
 }
 
 .overlay__nav__list {
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  
   
   li{
     margin-bottom: 10px;
