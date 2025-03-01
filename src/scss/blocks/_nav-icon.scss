@@ -103,6 +103,7 @@
 .overlay.active {
   opacity: 1;
   visibility: visible;
+  z-index: 99;
 }
 
 .overlay__nav__list {
@@ -126,6 +127,6 @@
   .header__nav-btn {
     display: block;
     position: absolute;
-    z-index: 2;
+    z-index: 100;
   }
 }

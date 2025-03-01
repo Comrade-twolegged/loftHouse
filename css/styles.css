@@ -527,8 +527,7 @@ button:hover {
 
 .card:hover .card__img {
   transform: scale(1.1);
-  -webkit-filter: contrast(110%) brightness(1.3) saturate(1.2);
-          filter: contrast(110%) brightness(1.3) saturate(1.2);
+  filter: contrast(110%) brightness(1.3) saturate(1.2);
 }
 
 .card__title {
@@ -590,21 +589,6 @@ button:hover {
   color: white;
   padding-left: 65px;
 }
-.phone::-webkit-input-placeholder, .name::-webkit-input-placeholder {
-  opacity: 1;
-  color: white;
-  padding-left: 65px;
-}
-.phone:-ms-input-placeholder, .name:-ms-input-placeholder {
-  opacity: 1;
-  color: white;
-  padding-left: 65px;
-}
-.phone::-ms-input-placeholder, .name::-ms-input-placeholder {
-  opacity: 1;
-  color: white;
-  padding-left: 65px;
-}
 .phone::placeholder,
 .name::placeholder {
   opacity: 1;
@@ -635,15 +619,6 @@ button:hover {
     font-size: 13px;
   }
   .phone::-moz-placeholder, .name::-moz-placeholder {
-    padding-left: 5px;
-  }
-  .phone::-webkit-input-placeholder, .name::-webkit-input-placeholder {
-    padding-left: 5px;
-  }
-  .phone:-ms-input-placeholder, .name:-ms-input-placeholder {
-    padding-left: 5px;
-  }
-  .phone::-ms-input-placeholder, .name::-ms-input-placeholder {
     padding-left: 5px;
   }
   .phone::placeholder,
@@ -1298,21 +1273,6 @@ button:hover {
   color: white;
   padding: 52px;
 }
-.phone__feedback::-webkit-input-placeholder, .name__feedback::-webkit-input-placeholder {
-  opacity: 1;
-  color: white;
-  padding: 52px;
-}
-.phone__feedback:-ms-input-placeholder, .name__feedback:-ms-input-placeholder {
-  opacity: 1;
-  color: white;
-  padding: 52px;
-}
-.phone__feedback::-ms-input-placeholder, .name__feedback::-ms-input-placeholder {
-  opacity: 1;
-  color: white;
-  padding: 52px;
-}
 .phone__feedback::placeholder,
 .name__feedback::placeholder {
   opacity: 1;
@@ -1340,15 +1300,6 @@ button:hover {
     padding-bottom: 11px;
   }
   .form__feedback .phone__feedback::-moz-placeholder, .form__feedback .name__feedback::-moz-placeholder {
-    padding-left: 5px;
-  }
-  .form__feedback .phone__feedback::-webkit-input-placeholder, .form__feedback .name__feedback::-webkit-input-placeholder {
-    padding-left: 5px;
-  }
-  .form__feedback .phone__feedback:-ms-input-placeholder, .form__feedback .name__feedback:-ms-input-placeholder {
-    padding-left: 5px;
-  }
-  .form__feedback .phone__feedback::-ms-input-placeholder, .form__feedback .name__feedback::-ms-input-placeholder {
     padding-left: 5px;
   }
   .form__feedback .phone__feedback::placeholder,
@@ -1503,6 +1454,7 @@ button:hover {
 .overlay.active {
   opacity: 1;
   visibility: visible;
+  z-index: 99;
 }
 
 .overlay__nav__list {
@@ -1523,6 +1475,6 @@ button:hover {
   .header__nav-btn {
     display: block;
     position: absolute;
-    z-index: 2;
+    z-index: 100;
   }
-}
+}/*# sourceMappingURL=styles.css.map */
